@@ -1,0 +1,34 @@
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: sq-animation;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite ;
+}
+
+@keyframes sq-animation{
+    0%{
+        background-color: red;
+    }
+
+    25%{
+        background-color: blue;
+        transform: translateY(100px);
+    }
+
+    50%{
+        background-color: green;
+        transform: translate(100px, 100px);
+    }
+
+    75%{
+        background-color: yellow;
+        transform: translateX(100px)
+    }
+
+    100%{
+        background-color: red;
+    }
+
+}
